@@ -1,13 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
 import App from './App'
-import './index.css'
+import { Provider } from 'react-redux'
+import store from './redux'
 
-import Header from './components/Header'
-
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <Header />
+ReactDOM.render(
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
+  document.getElementById('root')
 )

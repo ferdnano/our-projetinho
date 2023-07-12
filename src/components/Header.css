@@ -1,5 +1,35 @@
-#root {
-    color: black;
-    background-color: brown;
-    
-  }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #646cff;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #eaeaea;
+}
+
+nav ul li a:hover {
+  background-color: #ccc;
+}
