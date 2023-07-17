@@ -6,3 +6,10 @@ export type UserType = {
     name?: string;
     avatar_url?: string;
 };
+
+export type CatType = {
+    id: string;
+    url: string;
+    width: number;
+    height: number;
+};
